@@ -116,13 +116,13 @@ while true; do
             if [ $RESTART_TUNNEL == "yes" ]; then
                 echo "$(date +"%Y-%m-%d %H:%M:%S") - Restarting Tunneling."
                 if [ $TOOL_TUNNELING == "OpenClash" ]; then
-                   enable_oc
+                  enable_oc
                 elif [ $TOOL_TUNNELING == "openclash" ]; then
-                   enable_oc
+                  enable_oc
                 elif [ $TOOL_TUNNELING == "Passwall" ]; then
-                  restart_passwall
+                  enable_passwall
                 elif [ $TOOL_TUNNELING == "passwall" ]; then
-                  restart_passwall
+                  enable_passwall
                 elif [ $TOOL_TUNNELING == "Neko" ]; then
                   enable_neko
                 elif [ $TOOL_TUNNELING == "neko" ]; then
